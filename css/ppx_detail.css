@@ -1,0 +1,1504 @@
+@font-face {
+  font-family: 'Ftiebihei';
+  src: url('../fonts/Ftiebihei.woff') format('woff'),
+  url('../fonts/Ftiebihei.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '迷你简毡笔黑';
+  src: url('../fonts/迷你简毡笔黑.eot');
+  src: url('../fonts/迷你简毡笔黑.woff2') format('woff2'),
+  url('../fonts/迷你简毡笔黑.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body, html {
+  min-width: 992px;
+}
+ul{
+  list-style: none;
+}
+img{
+  display: block;
+}
+a:hover{
+  text-decoration: none;
+}
+.detail1 {
+  width: 100%;
+  overflow: hidden;
+  background: url("../imgs/route_bgrepeat.png") repeat left top;
+  background-size: 100px 100px;
+}
+/*报名*/
+.detail1 .apply {
+  background: url("../imgs/boat_title.png") no-repeat center;
+  background-size: 100% 100%;
+  overflow: hidden;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.apply p{
+  margin: 0 0 2.52%;
+  font-family:Ftiebihei;
+  letter-spacing: 4px;
+}
+.apply .crab {
+  width: 15%;
+  background: url("../imgs/crab.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 1%;
+  position: relative;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.apply .crab img {
+  position: absolute;
+}
+
+/*.apply .crab img.foot {
+  top: 7%;
+  left: 23%;
+  width: 55.7%;
+}*/
+
+.apply .crab img.oar {
+  top: 21.2%;
+  left: 64%;
+  width: 81%;
+}
+.crab:hover .oar{
+  transform-origin: 15% 13%;
+  -webkiit-transform-origin: 15% 13%;
+  animation: oaring 1.5s infinite;
+}
+.crab button:hover{
+  color: rgba(255,165,49,0.8)
+}
+.crab button {
+  color: #ffa531;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background: none;
+  margin: 35% 0 31% 11%;
+  font-family: Ftiebihei;
+}
+
+.apply h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: -1% 0 0.8%;
+  font-family:Ftiebihei;
+}
+
+.apply .spray {
+  width: 51.5%;
+  height: 28%;
+  background: url("../imgs/waterFlower.png") no-repeat center;
+  background-size: 90% 90%;
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  margin-left: -25.5%;
+  display: none;
+}
+/*线程*/
+.detail1 .line {
+  width: 70%;
+  margin: 7% auto 8.5%;
+  height: 180px;
+}
+.line >div,.line>span{
+  display: block;
+  float: left;
+}
+.flying{
+  background: url("../imgs/flying.png") no-repeat center;
+  background-size: 100% auto;
+}
+.routeWords h3 .trees {
+  left: -3%;
+  top: -21%;
+  width: 15%;
+  background: url("../imgs/tree.png") no-repeat center;
+  background-size: 100% auto;
+}
+.line em{
+  width: 6.5%;
+  height: 29%;
+  margin-bottom: -3%;
+  margin-left: 3%;
+  display: block;
+}
+.line .wire {
+  height: 8px;
+  width: 6.78%;
+  border-bottom: 2px solid #00AFE9;
+}
+.line .blocks{
+  width: 2.43%;
+  height: 10px;
+  position: relative;
+}
+.line .blocks .circleWrap{
+  position: absolute;
+  width: 210%;
+  top: 0;
+  left: 50%;
+  margin-left: -105%;
+  overflow: hidden;
+  padding: 18% 30%;
+  text-align: center;
+}
+.circleWrap span{
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 6px;
+  background: #00AFE9;
+  margin: 0 auto;
+}
+.blocks .lightSpot span{
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+}
+.circleWrap p{
+  display: block;
+  padding-top: 15px;
+  color: #07202a;
+  font-size: 15px;
+  line-height: 22px;
+}
+.line .blocks .lightSpot{
+  background: #00AFE9;
+  top: -10px;
+  padding: 40% 30%;
+}
+.lightSpot p{
+  color: #fff;
+  padding-top: 10px;
+}
+.lightSpot .island{
+  background: url("../imgs/island.png") no-repeat center;
+  background-size: 100% auto;
+}
+.lightSpot .house{
+  background: url("../imgs/house.png") no-repeat center;
+  background-size: 100% auto;
+}
+.detail1 .route{
+  width: 65%;
+  margin:  0 auto;
+}
+.routeWords{
+  color: #012635;
+  font-size: 18px;
+  letter-spacing: 0px;
+  padding: 0;
+}
+.routeWords h2{
+  font-size: 30px;
+  width: 58.8%;
+  padding: 7.8% 13% 5% 0;
+  background: url("../imgs/routeTitle.png") no-repeat center;
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: right;
+}
+/*线路详情*/
+.row2 .routeWords h2,.row4 .routeWords h2{
+  margin-left: 10%;
+}
+.routeWords h3 em{
+  position: absolute;
+  width: 12%;
+  height: 115%;
+  top: -48%;
+  left: 1%;
+  display: block;
+}
+.routeWords h3{
+  font-size: 18px!important;
+  left: 6%;
+  top: -30%;
+  width: 100%;
+  padding: 4% 9% 0;
+  position: relative;
+}
+.routeWords p{
+  font-size: 14px;
+  padding: 0 5% 0 15%;
+}
+.routeWords .hotelDecribe{
+  font-size: 12px;
+}
+.routeWords h5,.routeWords ul,.routeWords span{
+  padding-left: 15%;
+}
+.routeWords h5{
+  margin: 0;
+  padding-top: 6%;
+  color: #62c5ef;
+}
+.routeWords ul{
+  padding-top: 5%;
+}
+.routeWords ul li{
+  line-height: 30px;
+  position: relative;
+  font-size: 17px;
+}
+.routeWords ul em{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 17%;
+  left: -37px;
+}
+.routeWords ul .flight_icon em{
+  background: url("../imgs/flight_icon.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.routeWords ul .sleep_icon em{
+  background: url("../imgs/sleep.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.routeWords ul .meals_icon em{
+  background: url("../imgs/tableWare.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.routeImgs{
+  padding: 0;
+}
+.routeImgs .swiper-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.routeImgs img{
+  width: 100%;
+  height: 100%;
+}
+.routeImgs > img{
+  height: auto;
+}
+.imgFrame{
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  background: url("../imgs/routeFrame.png") no-repeat center;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.row3 .imgFrame,.row5 .imgFrame{
+  background: url("../imgs/routeFrame2.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.row2 .imgFrame,.row4 .imgFrame{
+  background: url("../imgs/routeFrame3.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.row2 .imgFrame{
+  background-size: 100% 101%;
+}
+.row2 .swiper-pagination,.row4 .swiper-pagination{
+  padding-left: 30%;
+}
+.route .row{
+  margin-bottom: 8%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+  margin-bottom: 9%;
+  left: -9%;
+  z-index: 110;
+}
+.row1 .swiper-container-horizontal>.swiper-pagination-bullets{
+  margin-bottom: 11%;
+  left: -4%;
+}
+.swiper-pagination-bullet{
+  background: #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background: #00C6F1;
+}
+/*市场价格*/
+.detail1 .price{
+  position: relative;
+}
+.price .priceMain{
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-top: -20%;
+  overflow: hidden;
+}
+.priceMain > img{
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.priceMain .pricePc >img{
+  width: 95%;
+  position: absolute;
+  top: -10%;
+  z-index: 100;
+}
+.priceMain .priceLeft >img{
+  left: -25%;
+}
+.priceMain .priceRight >img{
+  right: -25%;
+}
+.price .priceMain p{
+  margin: 0;
+  line-height: 15px;
+}
+.price .priceMain p em{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  background: #FFAC01;
+  border-radius: 10px;
+  padding: 0 1.1%;
+  line-height: 15px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+.price .priceMain h4{
+  color: #fff;
+  font-size: 15px!important;
+  text-align: center;
+  font-weight: bold;
+  width: 20%;
+  margin: 5.5% auto 6%;
+  line-height: 17px;
+  padding-right: 3%;
+}
+.priceMain h2{
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  top: 34%;
+  left: 0;
+}
+.priceMain >div{
+  width: 22.4%;
+  height: 42.8%;
+  background: url("../imgs/priceCircle2.png") no-repeat center;
+  background-size: 100% auto;
+  position: absolute;
+  padding: 1.4%  0.8% 0.8%;
+  color: #1F2E45;
+  top: 44%;
+  z-index: 199;
+}
+.priceMain .priceLeft{
+  left: 13.4%;
+}
+.priceMain .priceMeddle{
+  width: 33%;
+  height: 55.8%;
+  left: 33.9%;
+  padding: 1.4% 4.25% 0.8%;
+  background: url("../imgs/priceCircle1.png") no-repeat center;
+  background-size: 100% auto;
+}
+.priceMain .priceMeddle h4{
+  color: #979ca2;
+  width: 100%;
+  margin: 2.5% auto 5%;
+}
+.priceMain .priceRight{
+  right: 12.7%;
+}
+.hotel{
+  margin-top: 38px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0;
+  position: relative;
+}
+.hotel h2{
+  font-size: 15px;
+  padding: 3% 0 1.7%;
+  text-align: center;
+}
+.hotel >img{
+  width: 100%;
+  height: auto;
+}
+.hotel .hotelDescribe{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  padding: 0 20%;
+}
+.sonevaImg{
+  padding-left: 7%;
+  padding-top: 2%;
+}
+.sonevaImg img{
+  height: 80%;
+  max-height: 373px;
+}
+.hotel p{
+  margin: 0;
+}
+.hotel h2 img{
+  display: inline-block;
+  width: 3.3%;
+  vertical-align: baseline;
+  margin-right: 22px;
+}
+.hotelDetail{
+  padding-top: 6.2%;
+}
+.hotelDetail .hotelTitle{
+  width: 26.1%;
+  background: url("../imgs/hotelTitle.png") no-repeat center;
+  background-size: 100% auto;
+  margin: 0 auto;
+  padding: 3% 0 4.5% 7%;
+  font-size: 12px;
+  letter-spacing: 0;
+  text-align: center;
+}
+/*别墅介绍模块一*/
+.hotelDetail .imgGroup1{
+  width: 57.7%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 7.6%;
+}
+.imgGroup1 >div{
+  height: 100%;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.imgGroup1 >div:nth-child(1){
+ padding-right: 2.8%;
+}
+.imgGroup1 >div:nth-child(2) {
+  padding-left: 2.8%;
+}
+.imgGroup1 >div img{
+  width: 96%;
+  height: auto;
+  border-radius: 15px;
+}
+.imgGroup1 >div p{
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 17px;
+  left: 0;
+  width: 100%;
+  padding: 2% 9% 2% 11%;
+  color: #011639;
+  letter-spacing: 1px;
+}
+.imgGroup1 >div p .sand{
+  font-size: 15px;
+  color: #61adf6;
+}
+/*别墅介绍模块二*/
+.imgGroup2{
+  width: 63.5%;
+  background: url("../imgs/group2Bg.png") no-repeat top;
+  background-size: 100% auto;
+  margin: 0 auto;
+  color: #011639;
+  margin-top: 3.4%;
+  text-align: center;
+  margin-bottom: 6.5%;
+}
+.imgGroup2 .group2Words{
+  padding: 6.6% 0;
+}
+.imgGroup2 .group2Words p{
+  width: 85%;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-size: 12px;
+}
+.imgGroup2 .group2Words p:nth-child(1){
+  width: 62%;
+  padding-bottom: 3%;
+}
+.imgGroup2 .group2Imgs{
+  width: 95%;
+  margin: 0 auto;
+}
+.imgGroup2 .group2Imgs >div{
+  padding: 0 1.7%;
+}
+.imgGroup2 .group2Imgs img,.imgGroup3 img{
+  width: 100%;
+  height: auto;
+}
+/*别墅模块三*/
+.imgGroup3,.imgGroup4,.imgGroup5{
+  width: 62%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.imgGroup3 >div{
+  padding: 0 3.6%;
+  position: relative;
+  margin-bottom: 6%;
+}
+.imgGroup3 >p{
+  padding:5.1% 6% 6.2%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 19px;
+  color: #011639;
+}
+.imgGroup3 >div:last-child >p,.imgGroup4 >div:nth-child(6) >p{
+  padding: 7% 0 9%;
+}
+.imgGroup3 >div >p{
+  font-size: 12px;
+  position: absolute;
+  line-height: 16px;
+  width: 80%;
+  top: 66%;
+  #top: 45%;
+  left: 50%;
+  margin-left: -39%;
+  letter-spacing: 1px;
+  color: #011639;
+}
+.imgGroup3 >div >h4{
+  position: absolute;
+  font-size: 18px!important;
+  text-align: center;
+  width: 60%;
+  left: 50%;
+  top: 0;
+  margin-left: -30%;
+  padding-top: 5%;
+  top: 0;
+}
+/*别墅模块四*/
+.imgGroup4Wrap{
+  margin-top: -2%;
+  background: url("../imgs/hotel_bg.png") no-repeat top;
+  background-size: 100% auto;
+  padding-top: 10%;
+  position: relative;
+}
+.imgGroup4Wrap .car{
+  position: absolute;
+  width: 15.5%;
+  right: 9%;
+  top: -3%;
+}
+.imgGroup4,.imgGroup5{
+  background: url("../imgs/group4_bg.png") no-repeat top;
+  background-size: 100% auto;
+  overflow: visible;
+}
+.imgGroup4{
+  width: 73%;
+  padding: 0 6.4%;
+}
+.imgGroup4 >img{
+  width: 19.7%;
+  margin: -13% auto 2.2%;
+}
+.imgGroup4 >div >p{
+  top: 73%;
+  width: 70%!important;
+  margin-left: -34%!important;
+}
+/*别墅模块五*/
+.imgGroup5Wrap{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1.3%;
+}
+.imgGroup5Wrap>img{
+  width: 7.37%;
+  margin: 0 auto;
+}
+.imgGroup5{
+  width: 63%;
+  margin-top: -1.2%;
+  padding: 4% 2.5% 1.3% 4%;
+}
+.imgGroup5 .carousels{
+  background: url("../imgs/group5_bg.png") no-repeat top;
+  background-size: 100% 100%;
+  padding: 2.2% 0 3.3%;
+  overflow: hidden;
+}
+.imgGroup5 .carousels .swiper-container{
+  width: 53%;
+  margin: 0;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  float: left;
+  cursor: pointer;
+}
+.carousels .swiper-slide img,.carousels .swiper-slide{
+  width: 100%;
+  height: 100%!important;
+}
+.imgGroup5 .carousels .activityWords{
+  width: 47%;
+  float: left;
+  color: #535353;
+  font-size: 12px;
+  padding: 2% 8.4% 2% 2%;
+  letter-spacing: 0px;
+  line-height: 17px;
+}
+.activityWords h2{
+  font-size: 15px;
+  color: #011d38;
+  text-align: center;
+  margin-top: 0;
+}
+.activityWords h2 a{
+  color: #20b0e4;
+}
+.activityWords div{
+  display: none;
+  height: 100%;
+  overflow-y: auto;
+}
+.activityWords div:first-child{
+  display: block;
+}
+.activityWords div p:last-child{
+  margin-bottom: 0px;
+}
+.imgGroup5 .swiper-container-horizontal>.swiper-pagination-bullets {
+  margin-bottom: 1%;
+  left: 0;
+}
+.imgGroup5 .leftCricle{
+  position: absolute;
+  left: -1px;
+  top: 33.5%;
+  height: 13.5%;
+  width: 7.2%;
+  background: url("../imgs/leftCircle_02.png") no-repeat center;
+  background-size: 100% 100%;
+  z-index: 999;
+  border-top-right-radius: 90%;
+  border-bottom-right-radius: 90%;
+}
+/*别墅模块六*/
+.imgGroup6{
+  background: none;
+}
+.imgGroup6 .group2Words{
+  padding: 2.3% 0 6.6%;
+}
+.imgGroup6{
+  margin-top: 0;
+  width: 60%;
+  margin-bottom: 4%;
+}
+.imgGroup2 .group2Words p{
+  width: 79%;
+}
+.imgGroup6 .group2Words p:nth-child(1) {
+  width: 60%;
+}
+.imgGroup6 .group2Imgs div img{
+  border-radius: 8px;
+}
+.imgGroup6 .group2Imgs div:nth-child(2) img{
+  box-shadow: 2px 5px 20px rgba(0,0,0,.2);
+}
+.imgGroup6 .group2Imgs span{
+  display: block;
+  margin-top: -17%;
+  color: #001d39;
+  font-size: 15px;
+}
+/*别墅模块七*/
+.imgGroup7{
+  background: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.imgGroup7 .carousels{
+  padding: 2% 0 2.9%;
+}
+/*title2*/
+.hotelTitle2{
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/*底部*/
+footer{
+  background: url(../imgs/route_bgrepeat.png) repeat left top;
+  background-size: 100px 100px;
+  padding-top: 1.8%;
+}
+footer img{
+width: 100%;
+  height: auto;
+}
+
+/*弹框*/
+.wraps{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: none;
+}
+/*弹框*/
+.formFrame{
+  position: fixed;
+  width: 54%;
+  /*height: 48%;*/
+  z-index: 210;
+  background: url("../imgs/frame_bg.png") no-repeat center;
+  background-size: 100% 100%;
+  left: 50%;
+  margin-left: -27%;
+  top: 30%;
+  display: none;
+  border-radius: 15px;
+}
+.formFrame > div label{
+  text-align: right;
+  display: inline-block;
+  width: 30%;
+  margin-right: 3.2%;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.formFrame > div input{
+  width: 70%;
+  padding: 1.5% 2%;
+  border: 1px solid #15BDD3;
+  outline: none;
+  border-radius: 8px;
+}
+.formFrame > div >div{
+  margin-bottom: 5%;
+}
+.formFrame > div{
+  padding-top: 20%;
+}
+.form{
+  color: #5a5a5a;
+  font-size: 14px;
+}
+.form > div:nth-child(3){
+  padding-top: 7%;
+}
+#applyNow{
+  border: none;
+  background: #1fbed6;
+  color: #fff;
+}
+#applyNow:hover{
+  background: #51CFD6;
+}
+.ppxQr h1{
+  font-size: 12px!important;
+  letter-spacing: 0;
+  text-shadow: 5px 5px 5px rgba(19,71,86,.2);
+  margin: 0 -20%;
+}
+.ppxQr img{
+  width: 45%;
+  margin-left: 14%;
+  margin-top: 10%;
+}
+#close{
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: url("../imgs/frame_close.png") no-repeat center;
+  background-size: 100% 100%;
+  right: 14%;
+  top: 10%;
+  z-index: 220;
+  cursor: pointer;
+}
+
+
+/*多媒体查询*/
+@media screen and (min-width: 640px){
+  /*报名*/
+  .crab button{
+    font-size: 10px;
+  }
+  .detail1 .apply{
+    font-size: 15px;
+  }
+  .apply h2{
+    font-size: 15px!important;
+  }
+  .apply .spray{
+    display: block;
+  }
+  .apply .crab{
+    width: 15%;
+  }
+  .routeWords h2{
+    font-size: 27px;
+  }
+  .routeWords h3{
+    font-size: 16px!important;
+    margin-top: 20px;
+    padding: 3% 9% 0;
+  }
+  .routeWords p{
+    font-size: 13px;
+    padding: 0 5% 0 15%;
+  }
+  .routeWords ul li{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .routeWords ul em{
+    width: 22px;
+    height: 22px;
+    top: 17%;
+    left: -29px;
+  }
+  .hotel h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  /*豪华沙滩游泳别墅*/
+  .hotelDetail .hotelTitle{
+    font-size: 12px;
+    padding-right: 0;
+    line-height: inherit;
+    height: auto;
+    text-align: center;
+  }
+  /*市场售价*/
+  .priceMain h2{
+    font-size: 18px;
+  }
+/*弹框*/
+  .formFrame > div label{
+    width: 33%;
+  }
+  .formFrame > div input{
+    width: 53%;
+  }
+  .formFrame > div {
+    padding-top: 12%;
+    padding-bottom: 8%;
+  }
+}
+@media screen and (min-width: 767px){
+  .routeWords h2{
+    font-size: 20px;
+  }
+  .routeWords h3{
+    font-size: 14px!important;
+    margin-top: 13px;
+    padding: 2% 9% 0;
+  }
+  .routeWords p{
+    font-size: 12px;
+    padding: 0 0 0 15%;
+  }
+  .routeWords ul li{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .routeWords ul em{
+    width: 18px;
+    height: 18px;
+    top: 10%;
+    left: -25px;
+  }
+  .detail1 .route{
+    width: 69%;
+  }
+  .imgDisplay2 {
+    width: 75.67%;
+  }
+  /*行程详情*/
+.routeWords .hotelDecribe{
+  margin-right: -136%;
+}
+  .routeImgs{
+    margin-top: 10%;
+  }
+  .imgTop{
+    margin-top: 14%;
+  }
+  /*别墅介绍*/
+  .castleMain > div p, .imgDisplay2 > div p, .imgDisplay3 > div p{
+    padding: 4% 10%;
+  }
+  /*小汽车*/
+  .imgDisplay .car{
+    top:46.6%;
+  }
+}
+@media screen and (min-width: 780px){
+  .crab button{
+    font-size: 14px;
+  }
+  .detail1 .apply{
+    font-size: 18px;
+  }
+  .apply h2{
+    font-size: 18px!important;
+  }
+  .detail1 .line{
+    width: 55%;
+  }
+  .detail1 .route {
+    width: 65%;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+  .crab button{
+    font-size: 16px;
+  }
+  .detail1 .apply{
+    font-size: 22px;
+  }
+  .apply h2{
+    font-size: 22px!important;
+  }
+  .blocks .lightSpot span{
+    width: 18px;
+    height: 18px;
+  }
+  .line em{
+    margin-bottom: -2%;
+  }
+  /*行程详情*/
+  .routeImgs{
+    margin-top: 5%;
+  }
+  .imgTop{
+    margin-top: 12%;
+  }
+  /*市场售价*/
+  .priceMain .priceMeddle{
+    width: 33%;
+    height: 55.8%;
+    padding: 1.4% 4.25% 0.8%;
+  }
+  .price .priceMain h4{
+    font-size: 14px!important;
+    line-height: 15px;
+  }
+  /*豪华沙滩游泳别墅*/
+  .hotelDetail .hotelTitle{
+    font-size: 16px;
+  }
+
+  /*汽车*/
+  .imgDisplay .car{
+    right: 4%;
+    top: 7.5%;
+  }
+
+  /*弹框*/
+  .formFrame > div input{
+    width: 48%;
+  }
+  .formFrame > div label{
+    font-size: 14px;
+    width: 28%;
+  }
+  .ppxQr h1{
+    font-size: 14px!important;
+  }
+}
+@media screen and (min-width: 1024px){
+  /*行程详情*/
+  .routeImgs{
+    margin-top: 3%;
+  }
+  .imgTop{
+    margin-top: 20%;
+  }
+  .routeWords .hotelDecribe{
+    margin-right: 0;
+  }
+/*市场售价*/
+.priceMain >div{
+  width: 21.6%;
+  height: 41.3%;
+  top: 44%;
+}
+.priceMain .priceMeddle{
+  width: 33%;
+  height: 55.8%;
+}
+.price .priceMain h4{
+  font-size: 14px!important;
+  line-height: 15px;
+}
+/*别墅介绍*/
+  .hotelDetail .imgGroup1{
+    width: 55.7%;
+  }
+}
+@media screen and (min-width: 1200px){
+  .crab button{
+    font-size: 19px;
+  }
+  .detail1 .apply{
+    font-size: 27px;
+  }
+  .apply h2{
+    font-size: 27px!important;
+  }
+  .line .wire{
+    height: 11px;
+  }
+  .circleWrap span{
+    width: 12px;
+    height: 12px;
+  }
+  .circleWrap p{
+    font-size: 18px;
+  }
+  .routeWords h2{
+    font-size: 27px;
+  }
+  .routeWords h3{
+    font-size: 16px!important;
+    margin-top: 20px;
+    padding: 4% 9% 0;
+  }
+  .routeWords p{
+    font-size: 13px;
+    padding: 0 5% 0 15%;
+  }
+  .routeWords ul li{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .routeWords ul em{
+    width: 22px;
+    height: 22px;
+    top: 17%;
+    left: -29px;
+  }
+  .hotel h2{
+    font-size: 20px;
+    padding: 5% 0 1.7%;
+  }
+  .hotel{
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .line em{
+    margin-bottom: -1%;
+  }
+  /*行程信息*/
+  .routeWords h3 em{
+    top: -28%;
+  }
+  .routeImgs{
+    margin-top: 0;
+  }
+  .imgTop{
+    margin-top: 20%;
+  }
+  /*市场售价*/
+  .priceMain h2{
+    font-size: 22px;
+  }
+  .priceMain >div{
+    width: 18.6%;
+    height: 35.5%;
+  }
+  .priceMain .priceLeft{
+    left: 16.4%;
+  }
+  .priceMain .priceMeddle{
+    width: 28.7%;
+    height: 48.8%;
+  }
+  .priceMain .priceRight {
+    right: 19.8%;
+  }
+  .price .priceMain h4{
+    margin: 4% auto 6%;
+    -moz-margin: 10% auto 6%;
+  }
+  /*豪华沙滩游泳别墅*/
+  .hotelDetail .imgGroup1{
+    width: 47.7%;
+  }
+  .imgGroup2 .group2Words p,.imgGroup3 >p{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .imgGroup3{
+    width: 58%;
+  }
+  .imgGroup3 >div >h4{
+    font-size: 20px!important;
+    padding-top: 6%;
+  }
+  .imgGroup3 >div >p{
+    letter-spacing: 2px;
+    width: 76%;
+    margin-left: -37%;
+  }
+  .imgGroup3 >div:last-child >p,.imgGroup3 >div:nth-child(6) >p{
+    padding: 6% 0 8%;
+  }
+  .imgGroup4{
+    width: 69.3%;
+  }
+  .activityWords h2{
+    font-size:18px ;
+  }
+
+  /*汽车*/
+  .imgDisplay .car{
+    right: 6%;
+    top: 1.5%;
+  }
+  /*弹框*/
+  .formFrame{
+    width: 40%;
+    margin-left: -20%;
+  }
+  .formFrame > div label{
+    font-size: 12px;
+  }
+  .ppxQr h1{
+    font-size: 13px!important;
+  }
+  .formFrame > div input{
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 1280px){
+  .hotel .hotelDescribe{
+    padding: 0 23%;
+  }
+}
+@media screen and (min-width: 1366px){
+
+}
+@media screen and (min-width: 1440px){
+  .crab button{
+    font-size: 24px;
+  }
+  .detail1 .apply{
+    font-size: 36px;
+  }
+  .apply h2{
+    font-size: 36px!important;
+  }
+  .blocks .lightSpot span{
+    width: 30px;
+    height: 30px;
+  }
+  .routeWords h2{
+    font-size: 30px;
+  }
+  .routeWords h3{
+    font-size: 18px!important;
+  }
+  .routeWords p{
+    font-size: 14px;
+  }
+  .routeWords ul li{
+    font-size: 17px;
+    position: relative;
+    line-height: 30px;
+  }
+  /*市场售价*/
+  .priceMain >div{
+    width: 16%;
+    height: 30.5%;
+    top: 47%;
+  }
+  .priceMain .priceLeft{
+    left: 24%;
+  }
+  .priceMain .priceMeddle{
+    width: 23.5%;
+    height: 39.8%;
+    left: 38.9%;
+    padding: 1.4% 3.3% 0.8%;
+  }
+  .priceMain .priceRight {
+    right: 22.7%;
+  }
+  .price .priceMain h4{
+    font-size: 14px!important;
+    line-height: 15px;
+  }
+  .hotel h2{
+    font-size: 25px;
+    padding: 7% 0 1.7%;
+  }
+  .hotel{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .priceMain h2{
+    font-size: 24px;
+    top: 37%;
+  }
+  .line em{
+    margin-bottom: 0;
+  }
+  /*行程详情*/
+  .imgTop{
+    margin-top: 18%;
+  }
+  .routeWords p{
+    line-height: 23px;
+  }
+  /*豪华沙滩游泳别墅*/
+  .imgGroup1 >div p,.imgGroup3 >p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .imgGroup1 >div p{
+    bottom: 5%;
+  }
+  .imgGroup1 >div p .sand{
+    font-size: 18px;
+  }
+  .imgGroup2 .group2Words p{
+    font-size: 14px;
+    line-height: 22px;
+    width: 79%;
+  }
+  .imgGroup2 .group2Words p:nth-child(1){
+    width: 60%;
+  }
+  .imgGroup3{
+    width: 50%;
+  }
+  .imgGroup3 >div >p{
+    line-height: 18px;
+  }
+  .imgGroup3 >div >h4{
+    font-size: 22px!important;
+  }
+  .imgGroup4{
+    width: 62%;
+  }
+  .imgGroup4 >div >p{
+    top: 70%;
+    width: 64%!important;
+    margin-left: -31%!important;
+  }
+  .imgGroup5 .carousels .activityWords{
+    padding: 2% 8.4% 1% 2%;
+  }
+  .activityWords h2{
+    font-size: 20px;
+  }
+  .imgGroup6 .group2Imgs span{
+    font-size: 18px;
+  }
+  .imgGroup6 .group2Words p{
+    width: 75%;
+  }
+
+  .hotelDetail .hotelTitle{
+    font-size: 24px;
+  }
+
+  /*汽车*/
+  .imgGroup4Wrap .car{
+    right: 14%;
+    top: -1.3%;
+  }
+
+  /*弹框*/
+  .formFrame > div label{
+    font-size: 14px;
+  }
+  .ppxQr h1{
+    font-size: 16px!important;
+  }
+}
+@media screen and (min-width: 1500px){
+  .price .priceMain p {
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 1580px){
+  .price .priceMain p {
+    line-height: 19px;
+  }
+  .price .priceMain p em{
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 1.6%;
+  }
+}
+@media screen and (min-width: 1680px){
+  /*soneva kiri*/
+  .hotel h2{
+    font-size: 30px;
+  }
+  .hotel{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  .price .priceMain p{
+    line-height: 19px;
+  }
+  /*行程详情*/
+  .imgTop{
+    margin-top: 12%;
+  }
+  /*市场售价*/
+  .priceMain h2{
+    top: 38%;
+  }
+  .priceMain h2{
+    font-size: 24px;
+  }
+  .priceMain >div{
+    width: 15.5%;
+    height: 29.5%;
+    top: 47%;
+  }
+  .priceMain .priceMeddle{
+    width: 22.2%;
+    height: 38%;
+    left: 39.5%;;
+    padding: 1.4% 3.2% 0.8%;
+  }
+  .price .priceMain h4{
+    font-size: 16px!important;
+    line-height: 20px;
+    margin: 2.5% auto 8%;
+  }
+  /*别墅介绍*/
+  .imgGroup1 >div p{
+    bottom: 7%;
+    letter-spacing: 2px;
+  }
+  .imgGroup2 .group2Words p,.imgGroup3 >p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .imgGroup2 .group2Words p{
+    width: 75%;
+  }
+  .imgGroup2 .group2Words p:nth-child(1){
+    width: 55%;
+  }
+  .imgGroup3 >div >p{
+    line-height: 20px;
+    width: 70%;
+    margin-left: -34%;
+    font-size: 13px;
+  }
+  .imgGroup3 >div >h4{
+    font-size: 24px!important;
+  }
+  /*底部轮播*/
+  .imgGroup5 .carousels .activityWords{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  .activityWords h2{
+    font-size: 22px;
+  }
+  .imgGroup6 .group2Words p:nth-child(1) {
+    width: 64%;
+  }
+  /*弹框*/
+  .ppxQr h1{
+    font-size: 18px!important;
+  }
+  #close {
+    width: 29px;
+    height: 29px;
+  }
+}
+@media screen and (min-width: 1750px){
+  .price .priceMain p{
+    line-height: 20px;
+  }
+  .imgGroup3 >div >p{
+    line-height: 22px;
+  }
+  /*底部轮播*/
+  .activityWords h2{
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1920px){
+  .imgGroup3 >div >p{
+    font-size: 14px;
+  }
+  /*底部轮播*/
+  .imgGroup5 .carousels .activityWords{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 21px;
+  }
+  .activityWords h2{
+    font-size: 24px;
+    padding-bottom: 2%;
+  }
+}
+
+/*动画*/
+@-webkit-keyframes oaring {
+  0%{transform: rotate(0deg)}
+  70%{transform: rotate(-50deg)}
+  100%{transform: rotate(0deg)}
+}
+@keyframes oaring {
+  0%{transform: rotate(0deg)}
+  70%{transform: rotate(-50deg)}
+  100%{transform: rotate(0deg)}
+}
